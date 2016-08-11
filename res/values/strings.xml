@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MtiCalc</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Enter Data</string>
+    <string name="title_activity_tree_survey_form">Tree Survey Form</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_retry">Do you want to retry?</string>
+    <string name="dialog_question">Are you sure you want to exit?</string>
+    <string-array name="plot_array">
+        <item> Select Plot</item>
+        <item>Plot 1</item>
+        <item>Plot 2</item>
+        <item>Plot 3</item>
+        <item>Plot 4</item>
+        <item>Plot 5</item>
+
+
+    </string-array>
+    <string-array name="trees_array">
+        <item>Select species</item>
+        <item><i>Eucalyptus saligna</i></item>
+        <item><i>Eucalyptus grandis</i></item>
+        <item><i>Pinus patula</i></item>
+        <item><i>Cupressus lucitanica</i></item>
+        <item><i>Grevillea robusta</i></item>
+        </string-array>
+        
+         <string-array name="poles_array">
+        <item>Select species</item>
+        <item><i>Eucalyptus saligna</i></item>
+        <item><i>Eucalyptus grandis</i></item>
+         </string-array>
+    <string-array name="spinner_entry">
+        <item><b>Plantation</b></item>
+        <item><b>Tree</b></item>
+         <item><b>Poles</b></item>
+        </string-array>
+       
+    <string name="button_credits">Credit</string>
+   
+    <string name="cr_managing">Managing</string>
+    <string name="cr_contentdevelopment">Content developers</string>
+    <string name="cr_programming">Programming</string>
+    <string name="itemlocator_instruction">Please find this item and input a code next to it.</string>
+    
+<string name="description_logo">Demo</string>
+    <string name="description_about">About</string>
+    <string name="description_home">Home</string>
+    <string name="title_about">About</string>
+    <string name="title_home">Home</string>
+    <string name="about_intro">Entventure game was developed in Chepkoilel University College, department of forestry and wood science. the mission of this game is to promote forestry education in Kenya.
+At the end of the game, you are expected to have gain knowledge on the benefits of forests.
+the game is played through giving correct answers to a series of questions, filling out the puzzle and getting facts on forestry issues in Kenya.</string>
+    <string name="search_intro">Content for the Search page goes here in case the will be need for the search functionality.</string>
+    <string name="managing">Managing</string>
+    <string name="menu_about">About</string>
+
+    
+    <string name="title_activity_gpsservice">GPS Service</string>
+    <string name="input_prompt">Press Calculate to get Volume and Basal Area</string>
+     <string name="input_prompt2"></string>
+    <string name="input_not_complete">You have not defined all variables!</string>
+    <string name="enter_value">Enter a numeric value</string>
+    <string name="enter_positive_value">Enter a positive value!</string>
+    <string name="widthheight_not_negative">The dbh/ height can\'t be negative!</string>
+    <string name="avg_area">Average Basal Area</string>
+	<string name="avg_volume">Average Volume</string>
+    <string name="mticalc"> Plantation Details  </string>
+    <string name="treedetails">Tree Measurements</string>
+    <string name="poledetails">Pole Measurements</string>
+    <string name="treeno">Tree No.</string>
+    <string name="treeheight">Height (1-80M)</string>
+    <string name="polelength">Length (1-14M)</string>
+    <string name="treedbh">Dbh(diameter)(1-50cm)</string>
+    <string name="nexttree">Next Tree</string>
+    <string name="plotNo">Plot No 1</string>
+    <string name="button_insert">Press to add Plot</string>
+    <string name="Timber">Timber</string>
+    <string name="Poles">Poles</string>
+    <string name="top_diameter">Top Diameter(1-20cm)</string>
+    <string name="bottom_diameter">Bottom Diameter(1-27cm)</string>
+
+
+</resources>

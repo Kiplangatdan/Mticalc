@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:id="@+id/saved_data"
+    android:titleCondensed="saved Data"
+    android:title="Saved Data">
+   </item>
+    <item android:id="@+id/instruction" 
+        android:titleCondensed="Instructions"
+        android:title="Instructions"></item>
+    <item android:id="@+id/price_reference"
+          android:titleCondensed="Price Reference"
+          android:title="Price Reference"></item>
+
+    
+
+</menu>

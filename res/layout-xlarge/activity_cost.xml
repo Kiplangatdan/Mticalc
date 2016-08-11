@@ -1,0 +1,253 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="-3dp"
+    android:background="@drawable/small_mainbg"
+    tools:context=".TreeSurveyForm" >
+    
+<RelativeLayout
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="883dp" >
+
+    <ImageView
+        android:id="@+id/colour_strip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/colour_strip" />
+
+    <TextView
+        android:id="@+id/basictxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colour_strip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Cost Information"
+        android:textColor="#008000"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+     <requestFocus />
+
+    <TextView
+        android:id="@+id/Text_basal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Edit_volume"
+        android:layout_alignLeft="@+id/Text_height"
+        android:text="Basal Area :"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Text_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Edit_volume"
+        android:layout_alignLeft="@+id/Text_basal"
+        android:text="Volume :"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price_estimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/prices"
+        android:layout_alignLeft="@+id/Text_volume"
+        android:text="Price per Vol:"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cost_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/final_price"
+        android:layout_alignLeft="@+id/price_estimate"
+        android:text="Cost of Tree:"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_tree_species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_dbh"
+        android:layout_alignLeft="@+id/colour_strip"
+        android:layout_marginLeft="21dp"
+        android:text="Species :"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Text_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Edit_basal"
+        android:layout_alignLeft="@+id/tv_tree_species"
+        android:text="Height :"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_dbh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_dbh"
+        android:layout_alignLeft="@+id/tv_tree_species"
+        android:text="Dbh :"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_species"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/colour_strip"
+        android:layout_below="@+id/colour_strip"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_dbh"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_species"
+        android:layout_below="@+id/edit_species"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Edit_Height"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_dbh"
+        android:layout_below="@+id/edit_dbh"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Edit_basal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edit_Height"
+        android:layout_below="@+id/Edit_Height"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/final_price"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prices"
+        android:layout_below="@+id/prices"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/prices"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edit_volume"
+        android:layout_below="@+id/Edit_volume"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="Refer to price list"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Edit_volume"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edit_basal"
+        android:layout_below="@+id/Edit_basal"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cost_price"
+        android:layout_below="@+id/cost_price"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/addtreesbut"
+        android:minHeight="50dp"
+        android:minWidth="70dp"
+        android:text="Price list"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_price"
+        android:layout_alignBottom="@+id/btn_price"
+        android:layout_alignRight="@+id/final_price"
+        android:background="@drawable/addtreesbut"
+        android:minHeight="50dp"
+        android:minWidth="70dp"
+        android:text="Calculate"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/avg_volume"
+           android:titleCondensed="Average Volume "
+           android:title="Average">
+    <item
+        android:id="@+id/avg_plot_volume"
+        android:titleCondensed="plot Average "
+        android:title="plot Average"></item>
+        <item
+            android:id="@+id/avg_plant_volume"
+            android:titleCondensed="plantation Average "
+            android:title="plot Average"></item>
+    </group>
+    <group android:id="@+id/avg_dbh"
+           android:titleCondensed="Average dbh "
+           android:title="Average dbh">
+        <item android:id="@+id/avg_plot_dbh"
+          android:titleCondensed="plant average"
+          android:title="plant average"></item>
+         <item android:id="@+id/avg_plant_dbh"
+              android:titleCondensed="plant average"
+              android:title="plant average"></item>
+    </group>
+</menu>

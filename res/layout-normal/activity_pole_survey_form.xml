@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="-3dp"
+    android:background="@drawable/small_mainbg"
+    tools:context=".Main" >
+    
+<RelativeLayout
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="540dp" >
+
+   <ImageView
+        android:id="@+id/colour_strip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/colour_strip" />
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"
+       android:id="@+id/layout5"
+       android:padding="10dp"
+       android:weightSum="1"
+       android:layout_alignParentTop="true"
+       android:layout_alignLeft="@+id/layout4"
+       android:layout_alignStart="@+id/layout4"
+       android:layout_alignRight="@+id/layout4"
+       android:layout_alignEnd="@+id/layout4">
+
+       <TextView
+           android:id="@+id/textView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/layout5"
+           android:layout_centerHorizontal="true"
+           android:layout_gravity="center"
+           android:shadowColor="#2c5741"
+           android:shadowDx="0"
+           android:shadowRadius="1"
+           android:text="@string/poledetails"
+           android:textColor="#008000"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:visibility="visible" />
+
+       <Button
+           android:id="@+id/btn_insert"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:text="@string/button_insert" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignEnd="@+id/pole_no"
+        android:layout_alignLeft="@+id/pole_no"
+        android:layout_alignRight="@+id/pole_no"
+        android:layout_alignStart="@+id/pole_no"
+        android:layout_below="@+id/layout5"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/edit_sample"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sample"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_weight="0.86"
+            android:hint="Enter number of poles"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#FF0000"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_pole_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/pole_bd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/addtreesbut"
+        android:drawableEnd="@drawable/ic_action_next_item"
+        android:drawableRight="@drawable/ic_action_next_item"
+        android:hapticFeedbackEnabled="true"
+        android:text="Next Pole"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pole_no"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pole_length"
+        android:layout_below="@+id/layout5"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Pole No."
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/pole_td"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pole_length"
+        android:layout_below="@+id/pole_length"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="@string/top_diameter"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/pole_bd"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pole_length"
+        android:layout_below="@+id/pole_td"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/bottom_diameter"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/pole_length"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pole_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/polelength"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+</ScrollView>

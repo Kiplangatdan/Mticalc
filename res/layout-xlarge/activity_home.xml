@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/db1_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/seedling"
+    android:orientation="vertical"
+    android:paddingTop="15dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="15sp"
+        android:orientation="vertical"
+        android:padding="15dip" >
+
+        <ImageButton
+            android:id="@+id/home_btn_start"
+            style="@style/HomeButton"
+            android:layout_width="match_parent"
+            android:layout_margin="12dip"
+            android:adjustViewBounds="true"
+            android:onClick="onClickFeature"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_start_button" />
+
+        <ImageButton
+            android:id="@+id/home_btn_score"
+            style="@style/HomeButton"
+            android:layout_gravity="center"
+            android:layout_margin="12dip"
+            android:adjustViewBounds="true"
+            android:onClick="onClickFeature"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_highscore_button" />
+
+        <ImageButton
+            android:id="@+id/home_btn_credit"
+            style="@style/HomeButton"
+            android:layout_gravity="center"
+            android:layout_margin="12dip"
+            android:adjustViewBounds="true"
+            android:onClick="onClickFeature"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_credit_button" />
+
+        <ImageButton
+            android:id="@+id/home_btn_exit"
+            style="@style/HomeButton"
+            android:layout_gravity="center"
+            android:layout_margin="12dip"
+            android:adjustViewBounds="true"
+            android:onClick="onClickFeature"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_exit_button" />
+    </LinearLayout>
+
+</LinearLayout>

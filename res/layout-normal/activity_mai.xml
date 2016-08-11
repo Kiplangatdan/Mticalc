@@ -1,0 +1,199 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="-3dp"
+    android:background="@drawable/small_mainbg"
+    tools:context=".Main" >
+       
+<RelativeLayout 
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+   <ImageView
+        android:id="@+id/colour_strip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/colour_strip" />
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:layout_centerHorizontal="true"
+       android:orientation="horizontal"
+       android:layout_marginTop="30dp"
+       android:id="@+id/firstlayout"
+       android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/mticalc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:shadowColor="#2c5741"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:text="@string/mticalc"
+        android:textColor="#008000"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    </LinearLayout>
+
+   <EditText
+       android:id="@+id/woodlotName"
+       android:layout_width="250dp"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/firstlayout"
+       android:layout_centerHorizontal="true"
+       android:layout_marginLeft="0dp"
+       android:layout_marginRight="5dp"
+       android:layout_marginTop="15dp"
+       android:ems="10"
+       android:hint="Plantation Name"
+       android:inputType="text"
+       android:padding="10dp"
+       android:textColor="#000000"
+       android:textSize="20sp" >
+    <requestFocus />
+   </EditText>
+
+   <EditText
+       android:id="@+id/ownername"
+       android:layout_width="250dp"
+       android:layout_height="54dp"
+       android:layout_below="@+id/woodlotName"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="25dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="15dp"
+       android:ems="10"
+       android:hint="Owner Name"
+       android:inputType="text"
+       android:padding="10dp"
+       android:textColor="#000000"
+       android:textSize="20sp" >
+
+       </EditText>
+ <RadioGroup
+    android:id="@+id/trees"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="30dp"
+    android:layout_below="@+id/ownername" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/Timber" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Poles" />
+
+</RadioGroup>    
+    <Spinner
+        android:id="@+id/treeSpecies"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trees"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:animateLayoutChanges="true"
+        android:clickable="true"
+        android:contentDescription="tree species"
+        android:fitsSystemWindows="true"
+        android:gravity="left"
+        android:padding="10dp"
+        android:spinnerMode="dialog"
+        android:textAlignment="inherit"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp" >
+
+    </Spinner>
+   
+    
+
+    <EditText
+        android:id="@+id/woodlotarea"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/treeSpecies"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Area (sq/m)"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/treespacing"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/woodlotarea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Tree Spacing (m)"
+        android:inputType="phone"
+        android:maxLines="3"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp" >
+
+    </EditText>
+
+    <LinearLayout
+       android:id="@+id/seondlayout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@+id/treespacing">
+
+       <Button
+           android:id="@+id/addtreesbut"
+           android:layout_width="240dp"
+           android:layout_height="60dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="30dp"
+           android:layout_marginTop="35dp"
+           android:background="@drawable/addtreesbut"
+           android:hapticFeedbackEnabled="true"
+           android:text="Add Plantation"
+           android:textColor="#ffffff"
+           android:textSize="20sp"
+           android:textStyle="bold" />
+      
+</LinearLayout>
+ 
+</RelativeLayout>
+</ScrollView>

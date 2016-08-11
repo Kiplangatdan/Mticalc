@@ -1,0 +1,255 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="-3dp"
+    android:background="@drawable/small_mainbg"
+    tools:context=".TreeSurveyForm" >
+    
+<RelativeLayout
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="414dp" >
+
+    <ImageView
+        android:id="@+id/colour_strip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/colour_strip" />
+
+    <TextView
+        android:id="@+id/basictxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colour_strip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Cost Information"
+        android:textColor="#008000"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+     <requestFocus />
+    
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/price"
+        android:minHeight="50dp"
+        android:minWidth="70dp"
+        android:text="Calculate"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_volume"
+        android:layout_alignLeft="@+id/text_bd"
+        android:layout_alignRight="@+id/text_td"
+        android:text="Length :"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/final_price"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cost_price"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/cost_price"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price_estimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cost_price"
+        android:layout_alignLeft="@+id/text_volume"
+        android:text="Price per Vol:"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cost_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/price_estimate"
+        android:layout_below="@+id/prices"
+        android:layout_marginTop="16dp"
+        android:text="Cost of a Pole:"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_tree_species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_bd"
+        android:layout_alignRight="@+id/text_bd"
+        android:layout_below="@+id/colour_strip"
+        android:layout_marginTop="29dp"
+        android:text="Species :"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_species"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_tree_species"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/cost_price"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_td"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edit_species"
+        android:layout_toRightOf="@+id/cost_price"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_bd"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_length"
+        android:layout_below="@+id/edit_td"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_bd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_bd"
+        android:layout_alignLeft="@+id/text_td"
+        android:text="Bottom D :"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_td"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_bd"
+        android:layout_alignLeft="@+id/text_volume"
+        android:layout_alignRight="@+id/text_volume"
+        android:text="Top D :"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_length"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_bd"
+        android:layout_toRightOf="@+id/cost_price"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_volume"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_length"
+        android:layout_toRightOf="@+id/cost_price"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/prices"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_volume"
+        android:layout_toRightOf="@+id/cost_price"
+        android:ems="10"
+        android:hint="Refer to price list"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prices"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:text="Volume :"
+        android:textColor="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/price_estimate"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/price"
+        android:minHeight="50dp"
+        android:minWidth="70dp"
+        android:text="Price list"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+</ScrollView>

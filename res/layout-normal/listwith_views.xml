@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="@dimen/text_size_small"
+    android:paddingTop="@dimen/text_size_small"
+    android:weightSum="1" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="2dp"
+        android:text="Date"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="2dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="2dp"
+        android:text="Plot no."
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_plot_no"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="2dp"
+        android:text="Plantation name"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_plants_name"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="2dp"
+        android:text="Tree species"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_tree_species"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="2dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="1dp"
+        android:fitsSystemWindows="false"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:textAlignment="inherit" >
+
+<TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:gravity="left"
+         android:paddingLeft="2dp"
+         android:text="No"
+         android:textColor="#000"
+         android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Dbh"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Height"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Area"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingRight="2dp"
+                android:text="Volume"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+             <TextView
+                android:id="@+id/tv_tree_no"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="2dp" />
+            
+            
+            
+            <TextView
+                android:id="@+id/tv_tree_dbh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="2dp" />
+
+            <TextView
+                android:id="@+id/tv_tree_height"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+            <TextView
+                android:id="@+id/tv_tree_basal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+            <TextView
+                android:id="@+id/tv_tree_volume"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingRight="2dp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>

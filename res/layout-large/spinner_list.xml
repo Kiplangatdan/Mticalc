@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:layout_weight="1"
+
+              android:weightSum="1"
+              android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="@dimen/text_size_large"
+        android:paddingBottom="@dimen/text_size_large"
+        android:paddingLeft="@dimen/text_size_large"
+        android:paddingRight="@dimen/text_size_large"
+        android:paddingTop="@dimen/text_size_large"
+        android:text="Select details by:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_size_small"
+        android:animateLayoutChanges="true"
+        android:clickable="true"
+        android:entries="@array/spinner_entry"
+        android:labelFor="@integer/No"
+        android:paddingBottom="@dimen/text_size_large"
+        android:paddingLeft="@dimen/text_size_large"
+        android:paddingRight="@dimen/text_size_large"
+        android:paddingTop="@dimen/text_size_large"
+        android:spinnerMode="dialog"
+        android:splitMotionEvents="true" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:animateLayoutChanges="true"
+        android:clickable="true"
+        android:dividerHeight="1dp"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/text_size_small"
+        android:paddingBottom="@dimen/text_size_small"
+        android:paddingLeft="@dimen/text_size_small"
+        android:paddingRight="@dimen/text_size_small"
+        android:paddingTop="@dimen/text_size_small"
+        android:splitMotionEvents="true"
+        android:textAlignment="inherit" />
+
+</LinearLayout>
+
